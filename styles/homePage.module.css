@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e5e5e5;
+}
+.Blue{
+    color: #4D5AE5;    ;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+header nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #2e2e47;
+    color: #ffffff;
+    text-align: center;
+    padding: 120px 50px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin: 0;
+    max-width: 400px;
+    margin: 0 auto;
+    
+}
+
+.hero button {
+    background-color: #4a6cf7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.services {
+    display: flex;
+    padding: 50px 20px;
+    justify-content: space-evenly;
+}
+
+.service-item {
+    max-width: 200px;
+    text-align: center;
+}
+
+.service-item h3 {
+    color: #333;
+    font-size: 20px;
+}
+
+.service-item p {
+    color: #666;
+}
+
+.what-we-do {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.what-we-do h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.work-samples {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.work-samples img {
+    width: 360px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.team {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 300px;
+    background-color: #FFFFFF;
+    margin: 0 -150px;
+}
+
+.team-member img {
+    width:264px;
+    height:260px;
+
+}
+
+.team-member h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.team-member p {
+    color: #666;
+}
+
+footer {
+    background-color: #2e2e47;
+    color: white;
+    text-align: left;
+    padding: 50px;
+}
+
+footer p {
+    margin: 0;
+    max-width: 300px;
+}
+footer h2{
+    margin: 0px;
+}
