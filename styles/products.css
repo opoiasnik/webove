@@ -6,6 +6,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0 auto;
 }
 
 .header-container {
@@ -85,55 +86,89 @@ nav a:hover {
   color: #fff;
 }
 
-
 footer {
-  background-color: #2a2a2a;
+  background-color: #2E2F42;
+  height: 307px;
   color: #ffffff;
-  text-align: center;
-  padding: 40px 0;
+  padding-top: 100px;
+  
 }
 
 .footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  margin-left: 10%;
+  max-width:274px ;
+}
+
+.footer-container .logo img {
+  height: 40px;
+  margin-bottom: 20px;
 }
 
 .footer-container p {
+  max-width: 600px;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 16px;
+  margin: 0;
 }
-/*asdsa*/
+
+
 .image-list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 48px 24px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 0;
 }
-.link {
-    text-decoration: none;
+
+.image-list-item {
+  padding: 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: transform 0.3s ease;
 }
+
+.image-list-item:hover {
+  transform: translateY(-10px);
+}
+
+.description-container {
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e0e0e0;
+}
+
 .photo-description {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin-bottom: 8px;;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
 }
+
 .photo-text {
-    color: #434455;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+  color: #434455;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
+
+.image-list-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 300px;
+}
+
 .container { 
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 156px;
-    margin-right: 156px;
-    margin: 0 auto;
-    margin-bottom: 112px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 65px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 112px;
 }
