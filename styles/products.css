@@ -2,8 +2,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.header .logo img {
-  height: 35px;
+.logo{
+  margin-top: 3px;
 }
 
 .header a {
@@ -106,3 +106,14 @@ body {
   margin-top: 5px;
 }
 
+.first-span{
+  color: #4D5AE5;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  
+}
+.second-span{
+  font-weight: bold;
+  font-size: 18px;
+}
