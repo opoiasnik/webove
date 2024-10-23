@@ -15,6 +15,10 @@ body {
 
 }
 
+.nav-links a {
+  color: #2E2F42;
+}
+
 .header a:hover {
   text-decoration: underline;
 }
