@@ -5,53 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/homePage.css">
-    <title>WebStudio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">    <title>WebStudio</title>
 </head>
 <body>
 
     <!-- Header Section -->
-    <header>
-        <h1><span class ="Blue">Web</span><span>Studio</span></h1>
+    <header class = "d-flex justify-content-between align-items-center">
+        <h1><span class="Blue">WEB</span><span class="studio">STUDIO</span></h1>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">Summary</a>
+            <a class = "text-decoration-none fw-bold" href="#">Home</a>
+            <a class = "text-decoration-none fw-bold" href="#">Products</a>
+            <a class = "text-decoration-none fw-bold" href="#">Summary</a>
         </nav>
-        <div>
-            <p>Email: info@webstudio.com | +01 (888) 111-1111</p>
+        <div class = "kontakt">
+            <p>info@devstudio.com | +11 (000) 111-11-11</p>
         </div>
+        <!-- Dark mode toggle button -->
+        <button id="darkModeToggle">Dark Mode</button>
     </header>
 
     <!-- Hero Section -->
-    <div class="hero">
-        <h2>Effective Solutions for Your Business</h2>
-        <button>Order Service</button>
+    <div class="hero text-center text-white">
+        <h1 class = "mx-auto">Effective Solutions for Your Business</h1>
+        <button class = "custom-button">Order Service</button>
     </div>
 
     <!-- Services Section -->
-    <div class="services">
-        <div class="service-item">
+    <div class="services d-flex justify-content-center flex-wrap">
+        <div class="service-item text-center">
             <h3>Strategy</h3>
             <p>Our goal is to identify the business priorities so we can easily offer the perfect and creative solutions.</p>
         </div>
-        <div class="service-item">
+        <div class="service-item text-center">
             <h3>Punctuality</h3>
             <p>Bring key messages to the target audience in the right time.</p>
         </div>
-        <div class="service-item">
+        <div class="service-item text-center">
             <h3>Diligence</h3>
             <p>Research and excellent standards ensure success in challenging markets.</p>
         </div>
-        <div class="service-item">
+        <div class="service-item text-center">
             <h3>Technologies</h3>
             <p>We use the latest technologies to help businesses grow and prosper.</p>
         </div>
     </div>
 
     <!-- What We Are Doing Section -->
-    <div class="what-we-do">
+    <div class="what-we-do text-center">
         <h2>What Are We Doing</h2>
-        <div class="work-samples">
+        <div class="work-samples d-flex flex-wrap justify-content-center align-items-center">
             <img src="images/Image1.jpg" alt="Work Sample 1">
             <img src="images/Image2.jpg" alt="Work Sample 2">
             <img src="images/Image3.jpg" alt="Work Sample 3">
@@ -59,25 +61,25 @@
     </div>
 
     <!-- Team Section -->
-    <div class="team">
+    <div class="team text-center">
         <h2>Our Team</h2>
-        <div class="team-members">
-            <div class="team-member">
+        <div class="team-members d-flex justify-content-center flex-wrap">
+            <div class="team-member text-center">
                 <img src="images/CrewMember1.jpg" alt="Mark Guerrero">
                 <h3>Mark Guerrero</h3>
                 <p>Product Designer</p>
             </div>
-            <div class="team-member">
+            <div class="team-member text-center">
                 <img src="images/CrewMember2.jpg" alt="Tom Ford">
                 <h3>Tom Ford</h3>
                 <p>Frontend Developer</p>
             </div>
-            <div class="team-member">
+            <div class="team-member text-center">
                 <img src="images/CrewMember3.jpg" alt="Camila Garcia">
                 <h3>Camila Garcia</h3>
                 <p>Marketing</p>
             </div>
-            <div class="team-member">
+            <div class="team-member text-center">
                 <img src="images/CrewMember4.jpg" alt="Daniel Wilson">
                 <h3>Daniel Wilson</h3>
                 <p>UI Designer</p>
@@ -86,11 +88,14 @@
     </div>
 
     <!-- Footer Section -->
-    <footer>
-        <h2><span class= "Blue">Web</span><span>Studio</span></h2>
-            <br>
-            <p> Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+    <footer class = "text-white text-start">
+        <h2 class="m-0"><span class="Blue">WEB</span><span class="studio">STUDIO</span></h2>
+        <br>
+        <p class="m-0">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
     </footer>
 
+    <!-- Link to JavaScript file -->
+    <script src="./scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
