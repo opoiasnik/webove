@@ -2,7 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.logo{
+.logo {
   margin-top: 3px;
 }
 
@@ -11,8 +11,6 @@ body {
   font-size: 16px;
   font-weight: 600;
   margin-right: 15px;
-  
-
 }
 
 .nav-links a {
@@ -65,17 +63,19 @@ body {
   letter-spacing: 0.02em;
 }
 
-.card {
+/* Обновленный стиль для карточек */
+.custom-card {
   border: 1px solid #e0e0e0;
   border-radius: 8px;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
+  overflow: hidden;
 }
 
-.card:hover {
+.custom-card:hover {
   transform: translateY(-10px);
 }
 
-.card img {
+.custom-card img {
   max-height: 300px;
   object-fit: cover;
 }
@@ -103,29 +103,33 @@ body {
   color: #ffffff;
   margin: 0;
 }
+
 .custom-margin-top {
   margin-top: 90px !important;
 }
+
 .nav-links {
   margin-top: 5px;
 }
 
-.first-span{
+.first-span {
   color: #4D5AE5;
   font-weight: bold;
   font-size: 18px;
   font-family: 'Raleway', sans-serif;
-  
 }
-.second-span{
+
+.second-span {
   font-weight: bold;
   font-size: 18px;
 }
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
+
 .mob-menu {
   background-color: #FFFFFF;
   position: fixed;
@@ -138,13 +142,14 @@ body {
   padding-top: 80px;
   padding-right: 35px;
   z-index: 2;
-  transition: transition 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
 }
+
 .mob-close-btn {
   width: 100px;
-  align-items:center;
+  align-items: center;
 }
 
 .mob-menu-list {
@@ -153,19 +158,21 @@ body {
   gap: 40px;
   margin-bottom: 200px;
 }
+
 .mob-menu-list-item {
   list-style: none;
-  
 }
+
 .mob-link-item {
-  color:  #2E2F42;
+  color: #2E2F42;
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.11; /* 111.111% */
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-decoration: none;
 }
+
 .mob-adress-list {
   margin-bottom: 48px;
   display: flex;
@@ -173,25 +180,17 @@ body {
   gap: 40px;
   list-style: none;
 }
-.mob-list-email {
-  color:  #4D5AE5;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2; /* 111.111% */
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
+
+.mob-list-email,
 .mob-list-phone {
-  width: 100%;
-  color:  #4D5AE5;
+  color: #4D5AE5;
   font-size: 20px;
   font-weight: 500;
-  line-height: 1.2; /* 111.111% */
+  line-height: 1.2;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
-  font-style: normal;
   text-decoration: none;
 }
+
 .close-text-con {
   display: flex;
   align-items: center;
@@ -199,7 +198,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* CSS */
+/* Стиль для кнопки закрытия меню */
 .button-3 {
   appearance: none;
   background-color: #b83149;
@@ -210,7 +209,7 @@ body {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
@@ -219,8 +218,6 @@ body {
   text-align: center;
   text-decoration: none;
   user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
   vertical-align: middle;
   white-space: nowrap;
 }
@@ -232,4 +229,61 @@ body {
 
 .button-3:hover {
   background-color: #a42b5f;
+}
+
+@keyframes rotateEnlarge {
+  0% {
+    transform: translate(-50%, -50%) rotateY(0deg) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateY(360deg) scale(1.1);
+  }
+}
+
+/* Анимация для снятия выбора (вращение и уменьшение) */
+@keyframes rotateShrink {
+  0% {
+    transform: translate(-50%, -50%) rotateY(0deg) scale(1.1);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateY(360deg) scale(1);
+  }
+}
+
+/* Стили для оверлея */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1000;
+}
+
+/* Стили для активной карточки */
+.custom-card.active {
+  position: fixed;
+  z-index: 1001;
+  transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease;
+  max-height: 80vh; /* Максимальная высота 80% от высоты окна */
+  max-width: 90vw; /* Максимальная ширина 90% от ширины окна */
+  width: auto;
+  height: auto;
+}
+
+.custom-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Запуск анимации при выборе */
+.custom-card.animate-select {
+  animation: rotateEnlarge 0.5s forwards;
+}
+
+/* Запуск анимации при снятии выбора */
+.custom-card.animate-deselect {
+  animation: rotateShrink 0.5s forwards;
 }
