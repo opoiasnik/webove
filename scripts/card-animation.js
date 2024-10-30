@@ -64,12 +64,32 @@ document.addEventListener('DOMContentLoaded', () => {
         // Применяем трансформацию с вращением
         card.style.transformOrigin = 'center center';
         card.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(360deg)`;
+  
+        // Добавляем обработчик события окончания анимации
+        card.addEventListener('transitionend', function onTransitionEnd(event) {
+          // Проверяем, что событие относится к свойству transform
+          if (event.propertyName === 'transform') {
+            // Показываем описание плавно
+            const description = card.querySelector('.card-description');
+            if (description) {
+              description.classList.add('visible');
+            }
+            // Убираем обработчик
+            card.removeEventListener('transitionend', onTransitionEnd);
+          }
+        });
       });
   
       activeCard = card;
     }
   
     function deselectCard(card) {
+      // Скрываем описание плавно
+      const description = card.querySelector('.card-description');
+      if (description) {
+        description.classList.remove('visible');
+      }
+  
       // Возвращаем карточку в исходное положение
       card.style.transform = `translate(0, 0) rotateY(0deg) scale(1)`;
   

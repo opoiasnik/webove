@@ -54,12 +54,12 @@
   <main>
     <section class="container text-center my-4 custom-margin-top">
       <div class="btn-group" role="group">
-        <button type="button" class="btn btn-outline-primary">All</button>
-        <button type="button" class="btn btn-outline-primary">Web Site</button>
-        <button type="button" class="btn btn-outline-primary">App</button>
-        <button type="button" class="btn btn-outline-primary">Design</button>
-        <button type="button" class="btn btn-outline-primary">Marketing</button>
-      </div>
+        <button type="button" class="btn btn-outline-primary" data-category="All">All</button>
+        <button type="button" class="btn btn-outline-primary" data-category="Web-Site">Web Site</button>
+        <button type="button" class="btn btn-outline-primary" data-category="App">App</button>
+        <button type="button" class="btn btn-outline-primary" data-category="Design">Design</button>
+        <button type="button" class="btn btn-outline-primary" data-category="Marketing">Marketing</button>
+      </div>      
     </section>
 
     <section class="container content-section">
@@ -70,6 +70,9 @@
             <div class="card-body">
               <h2 class="card-title">Banking App Interface Concept</h2>
               <p class="card-text">App</p>
+              <div class="card-description">
+                A modern and intuitive banking app interface designed to simplify financial management for users.
+              </div>
             </div>
           </div>
         </article>
@@ -79,69 +82,93 @@
             <div class="card-body">
               <h2 class="card-title">Cashless Payment</h2>
               <p class="card-text">Marketing</p>
+              <div class="card-description">
+                Innovative marketing strategies to promote cashless payment solutions for businesses.
+              </div>
             </div>
           </div>
         </article>
         <article class="col-md-4">
-          <div class="card h-100 custom-card">
+          <div class="card h-100 custom-card" data-group="App">
             <img src="./images/3-min.jpeg" class="card-img-top" alt="Meditation App">
             <div class="card-body">
               <h2 class="card-title">Meditation App</h2>
               <p class="card-text">App</p>
+              <div class="card-description">
+                A serene meditation app aimed at helping users achieve mindfulness and reduce stress.
+              </div>
             </div>
           </div>
         </article>
         <article class="col-md-4">
-          <div class="card h-100 custom-card">
+          <div class="card h-100 custom-card" data-group="Marketing">
             <img src="./images/4-min.jpeg" class="card-img-top" alt="Taxi Service">
             <div class="card-body">
               <h2 class="card-title">Taxi Service</h2>
               <p class="card-text">Marketing</p>
+              <div class="card-description">
+                Effective marketing campaigns for a taxi service startup to connect drivers and riders seamlessly.
+              </div>
             </div>
           </div>
         </article>
         <article class="col-md-4">
-          <div class="card h-100 custom-card">
+          <div class="card h-100 custom-card" data-group="Design">
             <img src="./images/5-min.jpeg" class="card-img-top" alt="Screen Illustrations">
             <div class="card-body">
               <h2 class="card-title">Screen Illustrations</h2>
               <p class="card-text">Design</p>
+              <div class="card-description">
+                Engaging screen illustrations that enhance user experience and visual appeal.
+              </div>
             </div>
           </div>
         </article>
         <article class="col-md-4">
-          <div class="card h-100 custom-card">
+          <div class="card h-100 custom-card" data-group="Marketing">
             <img src="./images/6-min.jpeg" class="card-img-top" alt="Online Courses">
             <div class="card-body">
               <h2 class="card-title">Online Courses</h2>
               <p class="card-text">Marketing</p>
+              <div class="card-description">
+                Marketing solutions to boost enrollment and visibility for online educational platforms.
+              </div>
             </div>
           </div>
         </article>
         <article class="col-md-4">
-          <div class="card h-100 custom-card">
+          <div class="card h-100 custom-card" data-group="Design">
             <img src="./images/7-min.jpg" class="card-img-top" alt="Instagram Stories Concept">
             <div class="card-body">
               <h2 class="card-title">Instagram Stories Concept</h2>
               <p class="card-text">Design</p>
+              <div class="card-description">
+                Creative design concepts for Instagram Stories to increase engagement and brand awareness.
+              </div>
             </div>
           </div>
         </article>
         <article class="col-md-4">
-          <div class="card h-100 custom-card">
+          <div class="card h-100 custom-card" data-group="Web-Site">
             <img src="./images/8-min.jpeg" class="card-img-top" alt="Organic Food">
             <div class="card-body">
               <h2 class="card-title">Organic Food</h2>
               <p class="card-text">Web Site</p>
+              <div class="card-description">
+                A vibrant website for an organic food startup, highlighting products and promoting healthy living.
+              </div>
             </div>
           </div>
         </article>
         <article class="col-md-4">
-          <div class="card h-100 custom-card">
+          <div class="card h-100 custom-card" data-group="Web-Site">
             <img src="./images/9-min.jpeg" class="card-img-top" alt="Fresh Coffee">
             <div class="card-body">
               <h2 class="card-title">Fresh Coffee</h2>
               <p class="card-text">Web Site</p>
+              <div class="card-description">
+                An interactive website for a coffee brand, showcasing fresh brews and enhancing customer connection.
+              </div>
             </div>
           </div>
         </article>
@@ -166,5 +193,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./scripts/mobile-menu.js"></script>
   <script src="./scripts/card-animation.js"></script>
+  <script src="./scripts/filter.js"></script>
 </body>
 </html>
