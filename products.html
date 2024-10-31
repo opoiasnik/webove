@@ -25,30 +25,33 @@
           <a href="#" class="text-decoration-none fw-semibold">Summary</a>
         </nav>
       </div>
-      <div class="contact-info d-flex gap-3">
+      <div class="contact-info d-flex gap-3 align-items-center">
         <span class="header-contact-text">info@webstudio.com</span>
         <span class="header-contact-text">+1 (800) 111-11-11</span>
         <p class="menu-btn" data-mob-open>Menu</p>
+        <!-- Dark/Light Mode Toggle Button -->
+        <div class="mode-toggle ms-3">
+          <img src="./images/user-interface.png" alt="Toggle Dark/Light Mode" id="mode-toggle-btn" style="cursor: pointer; width: 30px; height: 30px;">
+        </div>
       </div>
-      
     </div>
+    <!-- Mobile Menu -->
     <div class="mob-menu is-hidden" data-mob>
       <div class="close-text-con">
         <button class="button-3" data-mob-close>Close</button>
       </div>
-      
       <ul class="list mob-menu-list">
-          <li class="mob-menu-list-item"><a href="./index.html" class="link mob-link-item current-color">Studio</a></li>
-          <li class="mob-menu-list-item"><a href="./products.html" class="link mob-link-item">Portfolio</a></li>
-          <li class="mob-menu-list-item"><a href="" class="link mob-link-item">Contacts</a></li>
+        <li class="mob-menu-list-item"><a href="./index.html" class="link mob-link-item current-color">Studio</a></li>
+        <li class="mob-menu-list-item"><a href="./products.html" class="link mob-link-item">Portfolio</a></li>
+        <li class="mob-menu-list-item"><a href="" class="link mob-link-item">Contacts</a></li>
       </ul>
       <address class="mob-adress">
-          <ul class="list mob-adress-list">
-              <li class="mob-item-adress"><a href="tel:+110001111111" class="mob-list-phone link">+11 (000) 111-11-11</a></li>
-              <li class="mob-item-adress"><a href="mailto:info@devstudio.com" class="mob-list-email link">info@devstudio.com</a></li>
-          </ul>
+        <ul class="list mob-adress-list">
+          <li class="mob-item-adress"><a href="tel:+110001111111" class="mob-list-phone link">+11 (000) 111-11-11</a></li>
+          <li class="mob-item-adress"><a href="mailto:info@devstudio.com" class="mob-list-email link">info@devstudio.com</a></li>
+        </ul>
       </address>
-  </div> 
+    </div> 
   </header>
 
   <main>
@@ -194,5 +197,6 @@
   <script src="./scripts/mobile-menu.js"></script>
   <script src="./scripts/card-animation.js"></script>
   <script src="./scripts/filter.js"></script>
+  <script src="./scripts/mode-toggle.js"></script>
 </body>
 </html>

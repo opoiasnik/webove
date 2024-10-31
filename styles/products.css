@@ -310,3 +310,53 @@ body {
 .button-3:hover {
   background-color: #a42b5f;
 }
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .bg-white {
+  background-color: #1e1e1e !important;
+}
+
+body.dark-mode .border-bottom {
+  border-bottom: 1px solid #333 !important;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+
+body.dark-mode .card-title,
+body.dark-mode .card-text,
+body.dark-mode .card-description {
+  color: #e0e0e0;
+}
+
+body.dark-mode .nav-links a {
+  color: #e0e0e0;
+}
+
+body.dark-mode .footer {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode .btn-outline-primary {
+  background-color: #2e2e2e;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+body.dark-mode .btn-outline-primary:hover {
+  background-color: #444;
+  border-color: #555;
+}
+
+body.dark-mode .mode-toggle img {
+  filter: invert(1);
+}
+
+
