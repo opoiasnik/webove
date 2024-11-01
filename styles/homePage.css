@@ -245,9 +245,25 @@ header.dark-mode {
 }
 
 .service-item.dark-mode {
-    background-color: gray;
+    background-color: #444;    
+    border-radius: 15px;         
+    text-align: center;         
+    padding: 20px;              
+    margin: 15px;               
+    color: #FFFFFF;             
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
+.service-item.dark-mode h3 {
+    color: #FFFFFF;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.service-item.dark-mode p {
+    color: #CCCCCC;
+    line-height: 1.6;
+}
 footer.dark-mode {
     color: white;
 }
