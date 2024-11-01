@@ -22,3 +22,21 @@ darkModeToggle.addEventListener('click', function() {
         darkModeToggle.textContent = 'Dark Mode';
     }
 });
+// Výber všetkých prvkov s triedou .fade-in
+const faders = document.querySelectorAll('.fade-in');
+
+// Vytvorenie sledovania prvkov (Intersection Observer)
+const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+    });
+}, {
+    threshold: 0.1 // Zobrazí, keď je 10% prvku viditeľných
+});
+
+// Pridanie sledovania všetkým prvkom
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+});
