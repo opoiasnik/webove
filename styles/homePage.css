@@ -25,17 +25,21 @@ header p{
 .Blue {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
-    font-weight: 800;
+    font-weight: bold;
     line-height: 21px;
     letter-spacing: 0.03em;
     text-align: left;
     color: #4D5AE5;
 }
-    
+
+header .Blue{
+    padding-left: 150px;
+}
+
 header .studio {
     font-family: 'Raleway', sans-serif; 
     font-size: 18px;                    
-    font-weight: 800;                   
+    font-weight: bold;                  
     line-height: 21px;                  
     letter-spacing: 0.03em;             
     text-align: left;                   
@@ -103,7 +107,12 @@ header .kontakt {
 
 .service-item {
     max-width: 264px;
-
+    border-radius: 15px;         
+    text-align: center;         
+    padding: 20px;              
+    margin: 15px;               
+    color: #FFFFFF; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);       
 }
 
 .service-item h3 {
@@ -180,6 +189,7 @@ header .kontakt {
 
 .team-member {
     background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .team-member img {
@@ -318,7 +328,7 @@ header.dark-mode .studio {
 footer .studio {
     font-family: 'Raleway', sans-serif; 
     font-size: 18px;                    
-    font-weight: 800;                   
+    font-weight: bold;                   
     line-height: 21px;                  
     letter-spacing: 0.03em;             
     text-align: left;                   

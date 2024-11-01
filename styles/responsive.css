@@ -28,7 +28,7 @@
     }
 
     .service-item, .team-member {
-        max-width: 45%;
+        width: 520px;
         margin: 10px;
     }
 }
@@ -63,6 +63,11 @@
         font-size: 48px;
     }
 
+    header{
+        max-width: 1210px;
+        padding: 25px;
+    }
+
     .service-item, .team-member {
         max-width: 22%;
     }
@@ -76,6 +81,7 @@
 @media (min-width: 1401px) {
     header {
         padding: 25px;
+        max-width: 1360px;
     }
 
     .hero {
