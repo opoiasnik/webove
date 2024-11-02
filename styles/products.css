@@ -1,1 +1,363 @@
 
+/* Основные стили */
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Стили для логотипа */
+.logo {
+  margin-top: 3px;
+}
+
+.first-span {
+  color: #4D5AE5;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.second-span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Стили для навигационных ссылок */
+.nav-links a {
+  color: #2E2F42;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.nav-links {
+  margin-top: 5px;
+}
+
+/* Стили для кнопок */
+.btn-outline-primary {
+  background-color: #f3f3fe;
+  color: #4D5AE5;
+  border-color: #f3f3fe;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-primary:hover {
+  background-color: #4a1dbf;
+  color: #fff;
+  border-color: #404BBF;
+}
+
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
+  background-color: #4a1dbf;
+  color: #fff;
+  border-color: #4a1dbf;
+}
+
+/* Стили для карточек */
+.custom-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-10px);
+}
+
+.custom-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.card-text {
+  color: #434455;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.content-section {
+  padding-top: 65px;
+  margin-bottom: 112px;
+}
+
+.custom-margin-top {
+  margin-top: 90px !important;
+}
+
+/* Стили для оверлея */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1000;
+}
+
+/* Стили для активной карточки */
+.custom-card.active {
+  position: fixed;
+  z-index: 1001;
+  transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease;
+  max-height: 80vh; /* Максимальная высота 80% от высоты окна */
+  max-width: 90vw;  /* Максимальная ширина 90% от ширины окна */
+  width: auto;
+  height: auto;
+  transform-origin: center center;
+}
+
+/* Анимация для выбора карточки */
+@keyframes rotateEnlarge {
+  0% {
+    transform: translate(0, 0) rotateY(0deg) scale(1);
+  }
+  100% {
+    transform: translate(0, 0) rotateY(360deg) scale(1.1);
+  }
+}
+
+/* Анимация для снятия выбора карточки */
+@keyframes rotateShrink {
+  0% {
+    transform: translate(0, 0) rotateY(360deg) scale(1.1);
+  }
+  100% {
+    transform: translate(0, 0) rotateY(0deg) scale(1);
+  }
+}
+
+/* Запуск анимации при выборе */
+.custom-card.animate-select {
+  animation: rotateEnlarge 0.5s forwards;
+}
+
+/* Запуск анимации при снятии выбора */
+.custom-card.animate-deselect {
+  animation: rotateShrink 0.5s forwards;
+}
+
+/* Стили для описания внутри карточки */
+.card-description {
+  opacity: 0;
+
+  transition: opacity 0.5s ease;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #fff; /* Белый цвет текста */
+  background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный темный фон */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* При активации класса 'visible' описание плавно появляется */
+.card-description.visible {
+  opacity: 1;
+  display: block;
+}
+
+/* При активации карточки описание отображается */
+.custom-card.active .card-description {
+  display: block;
+}
+
+/* Стили для футера */
+.footer {
+  background-color: #2E2F42;
+  color: #ffffff;
+  padding-top: 100px;
+  height: 307px;
+}
+
+.footer .container {
+  max-width: 274px;
+  margin-left: 10%;
+}
+
+.footer p {
+  max-width: 600px;
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Стили для мобильного меню */
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mob-menu {
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  padding-top: 80px;
+  padding-right: 35px;
+  z-index: 2;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.mob-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 200px;
+}
+
+.mob-menu-list-item {
+  list-style: none;
+}
+
+.mob-link-item {
+  color: #2E2F42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.mob-adress-list {
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  list-style: none;
+}
+
+.mob-list-email,
+.mob-list-phone {
+  color: #4D5AE5;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.close-text-con {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-bottom: 20px;
+}
+
+/* Стиль для кнопки закрытия меню */
+.button-3 {
+  appearance: none;
+  background-color: #b83149;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-3:hover {
+  background-color: #a42b5f;
+}
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .bg-white {
+  background-color: #1e1e1e !important;
+}
+
+body.dark-mode .border-bottom {
+  border-bottom: 1px solid #333 !important;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+
+body.dark-mode .card-title,
+body.dark-mode .card-text,
+body.dark-mode .card-description {
+  color: #e0e0e0;
+}
+
+body.dark-mode .nav-links a {
+  color: #e0e0e0;
+}
+
+body.dark-mode .footer {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode .btn-outline-primary {
+  background-color: #2e2e2e;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+body.dark-mode .btn-outline-primary:hover {
+  background-color: #444;
+  border-color: #555;
+}
+
+body.dark-mode .mode-toggle img {
+  filter: invert(1);
+}
+
+
