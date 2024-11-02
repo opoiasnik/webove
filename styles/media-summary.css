@@ -20,7 +20,19 @@
        .menu-btn {
         margin-bottom: 0;
        }
-       
+       .btn-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+       }
+       .btn {
+        width: 100px;
+
+       }
+       .btn-outline-primary {
+        margin: 0 !important;
+        border-radius: 10px !important;
+       }
 
 }
 

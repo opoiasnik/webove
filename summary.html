@@ -3,11 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/summary.css">
     <title>Summary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/media-summary.css">
+    <link rel="stylesheet" href="./styles/summary.css">
+    
 </head>
 <body>
-    
+    <header class="bg-white border-bottom">
+        <div class="container d-flex justify-content-between align-items-center py-3">
+          <div class="d-flex align-items-center">
+            <div class="logo me-3">
+              <span class="first-span">WEB</span><span class="second-span">STUDIO</span>
+            </div>
+            <nav class="nav-links">
+              <a href="./index.html" class="text-decoration-none fw-semibold me-3">Home</a>
+              <a href="./products.html" class="text-decoration-none fw-semibold me-3">Products</a>
+              <a href="./summary.html" class="text-decoration-none fw-semibold">Summary</a>
+            </nav>
+          </div>
+          <div class="contact-info d-flex gap-3 align-items-center">
+            <span class="header-contact-text">info@webstudio.com</span>
+            <span class="header-contact-text">+1 (800) 111-11-11</span>
+            <!-- <p class="menu-btn" data-mob-open>Menu</p> -->
+            <!-- Dark/Light Mode Toggle Button -->
+            <div class="mode-toggle ms-3">
+              <img src="./images/user-interface.png" alt="Toggle Dark/Light Mode" id="mode-toggle-btn" style="cursor: pointer; width: 30px; height: 30px;">
+            </div>
+          </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mob-menu is-hidden" data-mob>
+          <div class="close-text-con">
+            <button class="button-3" data-mob-close>Close</button>
+          </div>
+          <ul class="list mob-menu-list">
+            <li class="mob-menu-list-item"><a href="./index.html" class="link mob-link-item current-color">Studio</a></li>
+            <li class="mob-menu-list-item"><a href="./products.html" class="link mob-link-item">Portfolio</a></li>
+            <li class="mob-menu-list-item"><a href="" class="link mob-link-item">Contacts</a></li>
+          </ul>
+          <address class="mob-adress">
+            <ul class="list mob-adress-list">
+              <li class="mob-item-adress"><a href="tel:+110001111111" class="mob-list-phone link">+11 (000) 111-11-11</a></li>
+              <li class="mob-item-adress"><a href="mailto:info@devstudio.com" class="mob-list-email link">info@devstudio.com</a></li>
+            </ul>
+          </address>
+        </div> 
+      </header>
+      <main class="main-section">
+        <div class="main-con-summary">
+            <h1>Our Technologies</h1>
+            <p>We use modern technologies to build beautiful, responsive, and efficient applications. Here's a quick look at our tech stack:</p>
+            <div class="icons">
+                <div class="icon" onclick="openModal('js')"><i class="fab fa-js-square"></i></div>
+                <div class="icon" onclick="openModal('html')"><i class="fab fa-html5"></i></div>
+                <div class="icon" onclick="openModal('css')"><i class="fab fa-css3-alt"></i></div>
+                <div class="icon" onclick="openModal('bootstrap')"><i class="fab fa-bootstrap"></i></div>
+                <div class="icon" onclick="openModal('github')"><i class="fab fa-github"></i></div>
+            </div>
+        </div>
+        <section class="developers">
+            <div class="card">
+                <div><img src="./images/zahlushka.png" alt="Developer Avatar" class="avatar-img"></div>
+                <h3>Volodymyr Polishchuk</h3>
+                <p>Frontend Developer</p>
+            </div>
+            <div class="card">
+                <div><img src="./images/zahlushka.png" alt="Developer Avatar" class="avatar-img"></div>
+                
+                <h3>Oleh Poiasnik</h3>
+                <p>Frontend Developer</p>
+            </div>
+            <div class="card">
+                <div><img src="./images/zahlushka.png" alt="Developer Avatar" class="avatar-img"></div>
+                
+                <h3>Jakub Schwarc</h3>
+                <p>Frontend Developer</p>
+            </div>
+            <div class="card">
+                <div><img src="./images/zahlushka.png" alt="Developer Avatar" class="avatar-img"></div>
+                
+                <h3>Filip Sarvaj</h3>
+                <p>Frontend Developer</p>
+            </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="d-flex flex-column align-items-start">
+            <div class="logo mb-3">
+              <span class="first-span">WEB</span><span class="second-span">STUDIO</span>
+            </div>
+            <p>
+              Increase the flow of customers and sales for your business with digital marketing & growth solutions.
+            </p>
+          </div>
+        </div>
+      </footer>
+      <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div>
+                <img src="" id="modal-logo" alt="Technology Logo">
+            </div>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <a href="#" id="modal-link" target="_blank">Learn more</a>
+        </div>
+    </div>
+      <script src="./scripts/summary.js"></script>
 </body>
 </html>
