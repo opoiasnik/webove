@@ -1,6 +1,5 @@
 
 
-/* Основные стили */
 
 body {
     font-family: "Roboto", sans-serif;
@@ -8,7 +7,6 @@ body {
     padding: 0;
   }
   
-  /* Стили для логотипа */
   .logo {
     margin-top: 3px;
   }
@@ -222,7 +220,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    /* height: 100vh; */
     overflow: hidden;
     flex-direction: column;
 }

@@ -1,74 +1,195 @@
+/* ---------------------- 428px ---------------------- */
 @media screen and (max-width: 428px) {
+    /* Header */
+    .container {
+        padding: 0 15px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
     .nav-links {
-        display: none;
-       }
-       .nav-link-text {
-        display: none;
-       }
-       .header a {
-        margin-right: 0;
-       }
-       .mobile-menu-con {
-        gap: 20px;
-       }
-       .d-flex.align-items-center {
-        gap: 135px;
-       }
-       .header-contact-text {
-        display: none;
-       }
-       .menu-btn {
-        margin-bottom: 0;
-       }
-       .btn-group {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-       }
-       .btn {
-        width: 100px;
+        display: none; 
+    }
 
-       }
-       .btn-outline-primary {
-        margin: 0 !important;
-        border-radius: 10px !important;
-       }
+    .contact-info {
+        font-size: 12px;
+    }
 
-}
+    .mode-toggle img {
+        width: 25px;
+        height: 25px;
+    }
 
-/* ----------------------428PX---------------------*/
-@media screen and (min-width: 428px) and (max-width: 768px){
-    .nav-links {
-        display: none;
-       }
-       .nav-link-text {
-        display: none;
-       }
-       .header a {
-        margin-right: 0;
-       }
-       .mobile-menu-con {
-        gap: 20px;
-       }
-       .d-flex.align-items-center {
-        gap: 135px;
-       }
-       .header-contact-text {
-        display: none;
-       }
-       .menu-btn {
-        margin-bottom: 0;
-       }
-}
+    .main-section {
+        padding: 20px;
+    }
 
-/* -----------------------768px---------------------------- */
-@media screen and (min-width: 768px){
-    .menu-btn {
+    .main-con-summary {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .icons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .icon {
+        border-radius: 5% !important;
+        /* width: 85px !important;
+        height: 85px !important;  */
+    }
+
+    /* Developer Cards */
+    .developers {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* Modal */
+    .modal-content {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .modal-content h2 {
+        font-size: 1.5em;
+    }
+    #mode-toggle-btn {
+        display: none;
+    }
+    .header-contact-text {
         display: none;
     }
 }
 
-/* ---------------------------------1158PX--------------------------------- */
-@media screen and (min-width: 1158px) {
-    
+/* ----------------------- 428px - 768px ---------------------- */
+@media screen and (min-width: 428px) and (max-width: 768px) {
+    /* Header */
+    .nav-links {
+        display: none;
+    }
+
+    .mode-toggle img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .contact-info {
+        font-size: 14px;
+    }
+
+    /* Main Section */
+    .main-section {
+        padding: 30px;
+    }
+
+    .main-con-summary {
+        padding: 30px;
+        margin-top: 30px;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .icons {
+        gap: 20px;
+    }
+
+    /* Developer Cards */
+    .developers {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .card {
+        width: calc(50% - 15px); /* Two cards per row */
+        max-width: 300px;
+    }
+
+    /* Modal */
+    .modal-content {
+        padding: 25px;
+    }
+
+    .modal-content h2 {
+        font-size: 1.8em;
+    }
+}
+
+/* ----------------------- 768px and above ---------------------- */
+@media screen and (min-width: 768px) {
+    /* Header */
+    .container {
+        padding: 0 40px;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .contact-info {
+        font-size: 16px;
+    }
+
+    /* Main Section */
+    .main-section {
+        padding: 40px;
+    }
+
+    .main-con-summary {
+        padding: 40px;
+        margin-top: 50px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .icons {
+        gap: 25px;
+    }
+
+    /* Developer Cards */
+    .developers {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card {
+        width: calc(25% - 20px); /* Four cards per row */
+        max-width: 250px;
+    }
+
+    /* Modal */
+    .modal-content {
+        padding: 30px;
+    }
+
+    .modal-content h2 {
+        font-size: 2em;
+    }
 }
