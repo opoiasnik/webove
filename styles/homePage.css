@@ -16,9 +16,10 @@ header p{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 21px;
     letter-spacing: 0.02em;
     text-align: left;
+    padding-top: 15px;
 
 }
 
@@ -26,7 +27,6 @@ header p{
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: bold;
-    line-height: 21px;
     letter-spacing: 0.03em;
     text-align: left;
     color: #4D5AE5;
@@ -34,6 +34,8 @@ header p{
 
 header .Blue{
     padding-left: 150px;
+    position: relative;
+    top: -5px;
 }
 
 header .studio {
@@ -43,14 +45,16 @@ header .studio {
     line-height: 21px;                  
     letter-spacing: 0.03em;             
     text-align: left;                   
-    color: #2E2F42;                     
+    color: #2E2F42; 
+    position: relative;
+    top: -5px;                   
 }
 
 header nav a {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 21px;
     letter-spacing: 0.02em;
     text-align: left;
     margin: 0 15px;
@@ -61,11 +65,13 @@ header .kontakt {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 21px;
     letter-spacing: 0.02em;
     text-align: left;
     color: #434455;
 }
+
+
 
 .hero {
     background-color: #2E2F42;
