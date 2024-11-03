@@ -356,8 +356,5 @@ body.dark-mode .btn-outline-primary:hover {
   border-color: #555;
 }
 
-body.dark-mode .mode-toggle img {
-  filter: invert(1);
-}
 
 

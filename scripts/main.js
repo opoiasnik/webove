@@ -1,4 +1,5 @@
 const darkModeToggle = document.getElementById('darkModeToggle');
+const toggleBtn = document.getElementById('mode-toggle-btn');
 darkModeToggle.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
     document.querySelector('header').classList.toggle('dark-mode');
@@ -17,10 +18,10 @@ darkModeToggle.addEventListener('click', function() {
 
     // Toggle button text based on mode
     if (document.body.classList.contains('dark-mode')) {
-        darkModeToggle.textContent = 'Light Mode';
-    } else {
-        darkModeToggle.textContent = 'Dark Mode';
-    }
+        toggleBtn.src = '../images/brightness.png';
+      } else {
+        toggleBtn.src = '../images/user-interface.png';
+      }
 });
 // Výber všetkých prvkov s triedou .fade-in
 const faders = document.querySelectorAll('.fade-in');

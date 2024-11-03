@@ -7,7 +7,7 @@ body {
 
 header {
     background-color: white;
-    padding: 15px;
+    
 }
 
 
@@ -23,7 +23,7 @@ header p{
 
 }
 
-.Blue {
+.blue {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: bold;
@@ -32,8 +32,8 @@ header p{
     color: #4D5AE5;
 }
 
-header .Blue{
-    padding-left: 150px;
+header .blue{
+    padding-left: 10%;
     position: relative;
     top: -5px;
 }
@@ -233,7 +233,7 @@ header .kontakt {
 footer {
     background-color: #2E2F42; 
     padding-top: 90px;
-    padding-left: 150px;
+    padding-left: 5%;
     height: 307px;
     margin-top: 70px;
 }
@@ -303,13 +303,10 @@ header.dark-mode a {
 }
 
 .team-member.dark-mode {
-    background-color: gray;
+    background-color: #444;
     color: white;
 }
-/*.team-member.dark-mode p{
-    color: white;
-}
-*/
+
 p {
     color: inherit;
 }
