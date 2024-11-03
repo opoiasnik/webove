@@ -28,8 +28,15 @@ const modalData = {
         description: "GitHub is a platform for version control and collaboration, allowing developers to work together on projects.",
         link: "https://github.com/",
         logo: "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+    },
+    jquery: {
+        title: "jQuery",
+        description: "jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal, manipulation, and event handling simpler.",
+        link: "https://jquery.com/",
+        logo: "https://upload.wikimedia.org/wikipedia/en/9/9e/JQuery_logo.svg"
     }
 };
+
 
 function openModal(tech) {
     const modal = document.getElementById("modal");
