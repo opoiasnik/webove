@@ -5,6 +5,7 @@
     header {
         flex-direction: column;
         align-items: center;
+        padding-right: 5%;
     }
 
     .hero h1 {
@@ -37,6 +38,7 @@
 @media (min-width: 851px) and (max-width: 1250px) {
     header{
         padding-left: 5%;
+        padding-right: 5%;
     }
 
     .hero {
@@ -69,6 +71,7 @@
     header{
         max-width: 1210px;
         padding-left: 5%;
+        padding-right: 5%;
     }
 
     .service-item, .team-member {
@@ -86,7 +89,7 @@
     header {
        
         padding-left: 5%;
-        max-width: 1360px;
+       padding-right: 5%;
     }
 
     .hero {
