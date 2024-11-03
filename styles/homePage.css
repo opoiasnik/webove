@@ -33,9 +33,13 @@ header p{
 }
 
 header .blue{
-    padding-left: 10%;
+    padding-left: 5%;
     position: relative;
     top: -5px;
+    
+}
+header .studio{
+    margin-right: 10px;
 }
 
 header .studio {
@@ -56,9 +60,14 @@ header nav a {
     font-weight: 500;
     line-height: 21px;
     letter-spacing: 0.02em;
-    text-align: left;
+    text-align: center;
     margin: 0 15px;
     color: #2E2F42;
+    
+}
+header nav{
+    margin-top: 5px;
+   
 }
 
 header .kontakt {
