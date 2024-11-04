@@ -11,7 +11,11 @@ body {
 .logo {
   margin-top: 3px;
 }
-
+header .container-fluid {
+  padding-left: 5%;
+  padding-right: 5%;
+  
+}
 .first-span {
   color: #4D5AE5;
   font-weight: bold;
@@ -199,7 +203,7 @@ body {
 
 .footer .container {
   max-width: 274px;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 .footer p {

@@ -262,7 +262,7 @@ footer p {
 
 /* Nizsie je uz len dark mode na tlacidko pokial som dobre pochopil*/
 body.dark-mode {
-    background-color: #2e2e2e;
+    background-color: #121212;
 }
 
 header.dark-mode {
@@ -291,6 +291,7 @@ header.dark-mode {
 }
 footer.dark-mode {
     color: white;
+    background-color: #2e2e2e;
 }
 
 header.dark-mode a {
@@ -299,7 +300,7 @@ header.dark-mode a {
 
 .what-we-do.dark-mode {
     color: white;
-    background-color: #2e2e2e;
+    background-color: #121212;
 }
 
 .work-samples.dark-mode img {
@@ -308,7 +309,7 @@ header.dark-mode a {
 
 .team.dark-mode {
     color: white;
-    background-color: #2e2e2e;
+    background-color: #121212;
 }
 
 .team-member.dark-mode {
