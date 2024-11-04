@@ -266,11 +266,11 @@ body.dark-mode {
 }
 
 header.dark-mode {
-    background-color: #2e2e2e;
+    background-color: #1e1e1e;
 }
 
 .service-item.dark-mode {
-    background-color: #444;    
+    background-color: #1e1e1e;    
     border-radius: 15px;         
     text-align: center;         
     padding: 20px;              
@@ -280,7 +280,7 @@ header.dark-mode {
 }
 
 .service-item.dark-mode h3 {
-    color: #FFFFFF;
+    color: #4D5AE5;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -291,7 +291,7 @@ header.dark-mode {
 }
 footer.dark-mode {
     color: white;
-    background-color: #2e2e2e;
+    background-color: #1e1e1e;
 }
 
 header.dark-mode a {
@@ -313,7 +313,7 @@ header.dark-mode a {
 }
 
 .team-member.dark-mode {
-    background-color: #444;
+    background-color: #1e1e1e;
     color: white;
 }
 
