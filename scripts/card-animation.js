@@ -1,36 +1,44 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let activeCard = null;
-  
-    const cards = document.querySelectorAll('.custom-card');
-    const overlay = document.getElementById('overlay');
-  
-    cards.forEach((card) => {
+  let activeCard = null;
+
+  const cards = document.querySelectorAll('.custom-card');
+  const overlay = document.getElementById('overlay');
+
+  cards.forEach((card) => {
+      const clickInfo = card.querySelector('.click-info');
+      
       card.addEventListener('click', (event) => {
-        event.stopPropagation();
-  
-        if (card === activeCard) {
-          return;
-        }
-  
-        if (activeCard) {
-          deselectCard(activeCard);
-        }
-  
-        selectCard(card);
+          event.stopPropagation();
+
+          // Скрываем надпись "Click to More Info"
+          if (clickInfo) {
+              clickInfo.style.opacity = '0';
+              clickInfo.style.pointerEvents = 'none';
+          }
+
+          if (card === activeCard) {
+              return;
+          }
+
+          if (activeCard) {
+              deselectCard(activeCard);
+          }
+
+          selectCard(card);
       });
-    });
-  
-    overlay.addEventListener('click', () => {
+  });
+
+  overlay.addEventListener('click', () => {
       if (activeCard) {
-        deselectCard(activeCard);
+          deselectCard(activeCard);
       }
-    });
-  
-    function selectCard(card) {
+  });
+
+  function selectCard(card) {
       overlay.style.display = 'block';
-  
+
       const cardRect = card.getBoundingClientRect();
-  
+
       card.style.position = 'fixed';
       card.style.left = `${cardRect.left}px`;
       card.style.top = `${cardRect.top}px`;
@@ -38,65 +46,59 @@ document.addEventListener('DOMContentLoaded', () => {
       card.style.height = `${cardRect.height}px`;
       card.style.margin = '0';
       card.style.transform = `translate(0, 0)`;
-  
-      requestAnimationFrame(() => {
-        card.classList.add('active');
-  
-        const newCardRect = card.getBoundingClientRect();
-  
 
-        const windowWidth = window.innerWidth;
-        const windowHeight = window.innerHeight;
-  
-        const translateX = (windowWidth / 2) - (newCardRect.left + newCardRect.width / 2);
-        const translateY = (windowHeight / 2) - (newCardRect.top + newCardRect.height / 2);
-  
-        card.style.transformOrigin = 'center center';
-        card.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(360deg)`;
-  
-        card.addEventListener('transitionend', function onTransitionEnd(event) {
-          if (event.propertyName === 'transform') {
-            const description = card.querySelector('.card-description');
-            if (description) {
-              description.classList.add('visible');
-            }
-            card.removeEventListener('transitionend', onTransitionEnd);
-          }
-        });
+      requestAnimationFrame(() => {
+          card.classList.add('active');
+
+          const newCardRect = card.getBoundingClientRect();
+          const windowWidth = window.innerWidth;
+          const windowHeight = window.innerHeight;
+
+          const translateX = (windowWidth / 2) - (newCardRect.left + newCardRect.width / 2);
+          const translateY = (windowHeight / 2) - (newCardRect.top + newCardRect.height / 2);
+
+          card.style.transformOrigin = 'center center';
+          card.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(360deg)`;
+
+          card.addEventListener('transitionend', function onTransitionEnd(event) {
+              if (event.propertyName === 'transform') {
+                  const description = card.querySelector('.card-description');
+                  if (description) {
+                      description.classList.add('visible');
+                  }
+                  card.removeEventListener('transitionend', onTransitionEnd);
+              }
+          });
       });
-  
+
       activeCard = card;
-    }
-  
-    function deselectCard(card) {
+  }
+
+  function deselectCard(card) {
       const description = card.querySelector('.card-description');
       if (description) {
-        description.classList.remove('visible');
+          description.classList.remove('visible');
       }
-  
+
       card.style.transform = `translate(0, 0) rotateY(0deg) scale(1)`;
-  
+
       card.addEventListener('transitionend', function onTransitionEnd() {
-        card.removeEventListener('transitionend', onTransitionEnd);
-  
-        card.style.position = '';
-        card.style.left = '';
-        card.style.top = '';
-        card.style.width = '';
-        card.style.height = '';
-        card.style.margin = '';
-        card.style.transform = '';
-        card.style.transformOrigin = '';
-  
+          card.removeEventListener('transitionend', onTransitionEnd);
 
-        card.classList.remove('active');
-  
+          card.style.position = '';
+          card.style.left = '';
+          card.style.top = '';
+          card.style.width = '';
+          card.style.height = '';
+          card.style.margin = '';
+          card.style.transform = '';
+          card.style.transformOrigin = '';
 
-        overlay.style.display = 'none';
-  
+          card.classList.remove('active');
 
-        activeCard = null;
+          overlay.style.display = 'none';
+
+          activeCard = null;
       }, { once: true });
-    }
-  });
-  
+  }
+});

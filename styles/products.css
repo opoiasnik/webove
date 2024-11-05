@@ -360,5 +360,14 @@ body.dark-mode .btn-outline-primary:hover {
   border-color: #555;
 }
 
+.click-info {
+  font-size: 14px;
+  color: #007bff;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+
 
 
