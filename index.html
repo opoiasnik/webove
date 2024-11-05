@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./styles/homePage.css">
     <link rel="stylesheet" href="./styles/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">    <title>WebStudio</title>
-    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">    
+    <title>WebStudio</title>
 </head>
 <body>
 
@@ -53,7 +53,7 @@
     <!-- Hero Section -->
     <div class="hero text-center text-white">
         <h1 class = "mx-auto">Effective Solutions for Your Business</h1>
-        <button class = "custom-button">Order Service</button>
+        <button class = "custom-button" data-modal-open>Order Service</button>
     </div>
 
     <!-- Services Section -->
@@ -120,7 +120,71 @@
         <p class="m-0">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
     </footer>
 
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal-wd">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="close-icon-modal" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+                </svg>
+            </button>
+            
+                <p class="modal-header">Leave your contacts and we will call you back</p>
+                <form class="modal-form">
+                    <div class="modal-field">
+                        <label for="user-name" class="input-label-text">Name</label>
+                        <div class="input-wrap">
+                            <input type="text" class="modal-input" name="user-name" id="user-name">
+                            <svg class="input-icon" width="18" height="24">
+                                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-field">
+                        <label for="user-phone" class="input-label-text">Phone</label>
+                        <div class="input-wrap">
+                            <input type="tel" class="modal-input" name="user-phone" id="user-phone">
+                            <svg class="input-icon" width="18" height="24">
+                                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-field">
+                        <label for="user-email" class="input-label-text">Email</label>
+                        <div class="input-wrap">
+                            <input type="email" class="modal-input" name="user-email" id="user-email">
+                            <svg class="input-icon" width="18" height="24">
+                                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-field modal-textarea-con">
+                        <label for="user-comment" class="input-label-text">Comment</label>
+                        <textarea 
+                            name="user-comment" 
+                            id="user-comment" 
+                            class="modal-textarea" 
+                            placeholder="Text input"
+                        ></textarea>
+                    </div>
+                    <div class="modal-field-check">
+                        <input type="checkbox" name="user-privacy" id="user-privacy" value="true" class="checkbox-mark visually-hidden">
+                        <label for="user-privacy" class="checkbox-text"><span class="checkbox-custom">
+                            <svg class="check-icon" width="10" height="8">
+                                <use href="./images/icons.svg#icon-check"></use>
+                            </svg>
+                        </span>I accept the terms and conditions of the <a class="privacy" href="#">Privacy Policy</a></label>
+                    </div>
+                    <button class="modal-button">Send</button>
+            </form>
+        </div>
+    </div>
+
     <!-- Link to JavaScript file -->
+    <script src="./scripts/modal.js"></script>
     <script src="./scripts/main.js"></script>
     <script src="./scripts/mobile-menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
