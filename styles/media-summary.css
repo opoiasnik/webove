@@ -1,5 +1,5 @@
-/* ---------------------- 428px ---------------------- */
-@media screen and (max-width: 428px) {
+/* ---------------------- 550px and below ---------------------- */
+@media screen and (max-width: 550px) {
     /* Header */
     .container {
         padding: 0 15px;
@@ -43,10 +43,9 @@
         flex-direction: column;
         gap: 15px;
     }
+    
     .icon {
         border-radius: 5% !important;
-        /* width: 85px !important;
-        height: 85px !important;  */
     }
 
     /* Developer Cards */
@@ -69,16 +68,21 @@
     .modal-content h2 {
         font-size: 1.5em;
     }
-    #mode-toggle-btn {
-        display: none;
-    }
+    
+    
     .header-contact-text {
         display: none;
     }
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+        margin: 0px;
+        color: black;
+    }
 }
 
-/* ----------------------- 428px - 768px ---------------------- */
-@media screen and (min-width: 428px) and (max-width: 768px) {
+/* ----------------------- 551px - 850px ---------------------- */
+@media screen and (min-width: 551px) and (max-width: 850px) {
     /* Header */
     .nav-links {
         display: none;
@@ -134,22 +138,21 @@
     .modal-content h2 {
         font-size: 1.8em;
     }
-   .header-contact-text{
-    display: none;
-   }
-   .menu-btn {
-    display: block;
-    cursor: pointer;
-    margin: 0;
-    color:black
-}
+
+    .header-contact-text {
+        display: none;
+    }
     
-    
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+        margin: 0;
+        color: black;
+    }
 }
 
-
-/* ----------------------- 768px and above ---------------------- */
-@media screen and (min-width: 768px) {
+/* ----------------------- 851px - 1250px ---------------------- */
+@media screen and (min-width: 851px) and (max-width: 1250px) {
     /* Header */
     .container {
         padding: 0 40px;
@@ -192,7 +195,7 @@
     }
 
     .card {
-        width: calc(25% - 20px); /* Four cards per row */
+        width: calc(33.33% - 20px); /* Three cards per row */
         max-width: 250px;
     }
 
@@ -203,5 +206,117 @@
 
     .modal-content h2 {
         font-size: 2em;
+    }
+}
+
+/* ----------------------- 1251px - 1400px ---------------------- */
+@media screen and (min-width: 1251px) and (max-width: 1400px) {
+    /* Header */
+    .container {
+        padding: 0 60px;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .contact-info {
+        font-size: 18px;
+    }
+
+    /* Main Section */
+    .main-section {
+        padding: 50px;
+    }
+
+    .main-con-summary {
+        padding: 50px;
+        margin-top: 60px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .icons {
+        gap: 30px;
+    }
+
+    /* Developer Cards */
+    .developers {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card {
+        width: calc(25% - 20px); /* Four cards per row */
+        max-width: 300px;
+    }
+
+    /* Modal */
+    .modal-content {
+        padding: 35px;
+    }
+
+    .modal-content h2 {
+        font-size: 2.2em;
+    }
+}
+
+/* ----------------------- 1401px and above ---------------------- */
+@media screen and (min-width: 1401px) {
+    /* Header */
+   
+
+    .nav-links {
+        display: flex;
+    }
+
+    
+
+    /* Main Section */
+    .main-section {
+        padding: 60px;
+    }
+
+    .main-con-summary {
+        padding: 60px;
+        margin-top: 70px;
+    }
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+
+    .icons {
+        gap: 35px;
+    }
+
+    /* Developer Cards */
+    .developers {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .card {
+        width: calc(20% - 25px); /* Five cards per row */
+        max-width: 300px;
+    }
+
+    /* Modal */
+    .modal-content {
+        padding: 40px;
+    }
+
+    .modal-content h2 {
+        font-size: 2.5em;
     }
 }

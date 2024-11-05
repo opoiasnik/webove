@@ -728,3 +728,24 @@ footer .studio {
 .modal-textarea-con {
     margin-bottom: 16px;
 }
+
+
+/*animation for text*/
+#animatedText span {
+    display: inline-block;
+    
+    transform: translateY(20px);
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes wave {
+    0%, 100% {
+       
+        transform: translateY(20px);
+    }
+    50% {
+       
+        transform: translateY(0);
+    }
+}
