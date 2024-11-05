@@ -1,0 +1,17 @@
+.hero h1 {
+    font-size: 48px;
+}
+
+header {
+    max-width: 1210px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.service-item, .team-member {
+    max-width: 22%;
+}
+
+footer {
+    padding-left: 5%;
+}

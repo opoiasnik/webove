@@ -1,0 +1,25 @@
+header {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.hero {
+    padding: 100px 30px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.services, .team {
+    padding: 40px 20px;
+    gap: 2vw;
+}
+
+.service-item, .team-member {
+    max-width: 30%;
+}
+
+footer {
+    padding-left: 10%;
+}

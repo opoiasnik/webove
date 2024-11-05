@@ -1,0 +1,26 @@
+.hero h1 {
+    font-size: 32px;
+}
+
+.service-item, .team-member {
+    width: 520px;
+    margin: 10px;
+}
+
+.menu-btn {
+    display: block;
+    cursor: pointer;
+}
+
+header div nav a {
+    display: none;
+}
+
+header div .kontakt {
+    display: none;
+}
+
+header {
+    padding-left: 5%;
+    padding-right: 5%;
+}

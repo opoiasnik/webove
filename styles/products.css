@@ -370,4 +370,65 @@ body.dark-mode .btn-outline-primary:hover {
 
 
 
+/* Styles for Resizable Section */
+.sekcia_zmena {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.section-title {
+  font-size: 24px;
+  transition: font-size 0.3s;
+}
+
+.section-content {
+  font-size: 16px;
+  margin-top: 10px;
+  transition: font-size 0.3s;
+}
+
+.section-image {
+  margin-top: 10px;
+  transition: width 0.3s, height 0.3s;
+}
+
+.control-panel {
+  margin-top: 15px;
+}
+
+.card-body {
+  font-size: 16px;
+  transition: font-size 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.row-2 .col-md-4 { flex: 0 0 50%; max-width: 50%; }
+.row-3 .col-md-4 { flex: 0 0 33.3333%; max-width: 33.3333%; }
+.row-4 .col-md-4 { flex: 0 0 25%; max-width: 25%; }
+
+
+
+
+.custom-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden; /* Ограничивает содержимое внутри границ карточки */
+  transition: transform 0.5s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-inner {
+  transition: transform 0.3s ease;
+  transform-origin: center center; /* Масштабирование из центра */
+}
 
