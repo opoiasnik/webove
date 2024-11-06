@@ -1,0 +1,129 @@
+/* Responsive Design */
+
+/* For screens up to 550px */
+@media (max-width: 550px) {
+    header {
+        align-items: center;
+        padding-right: 5%;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .services, .what-we-do, .team {
+        padding: 20px 10px;
+    }
+    header div nav a {
+        display: none;
+    }
+    header div .kontakt {
+        display: none;
+    }
+
+    footer {
+        padding: 20px;
+        text-align: center;
+    }
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* For screens between 550px and 850px */
+@media (min-width: 551px) and (max-width: 850px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .service-item, .team-member {
+        width: 520px;
+        margin: 10px;
+    }
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+    }
+    header div nav a {
+        display: none;
+    }
+    header div .kontakt{
+        display: none;
+    }
+    header{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+/* For screens between 850px and 1250px */
+@media (min-width: 851px) and (max-width: 1250px) {
+    header{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .hero {
+        padding: 100px 30px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .services, .team {
+        padding: 40px 20px;
+        gap: 2vw;
+    }
+
+    .service-item, .team-member {
+        max-width: 30%;
+    }
+    footer {
+        padding-left: 10%;
+    }
+}
+
+/* For screens between 1250px and 1400px */
+@media (min-width: 1251px) and (max-width: 1400px) {
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    header{
+        max-width: 1210px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .service-item, .team-member {
+        max-width: 22%;
+    }
+
+    footer {
+        
+        padding-left: 5%;
+    }
+}
+
+/* For screens larger than 1400px */
+@media (min-width: 1401px) {
+    header {
+       
+        padding-left: 5%;
+       padding-right: 5%;
+    }
+
+    .hero {
+        padding: 120px 50px;
+    }
+
+    .hero h1 {
+        font-size: 56px;
+    }
+
+    .services, .team {
+        padding: 50px 20px;
+    }
+}
