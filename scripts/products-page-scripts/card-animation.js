@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
       card.addEventListener('click', (event) => {
           event.stopPropagation();
 
-          // Скрываем надпись "Click to More Info"
+
           if (clickInfo) {
               clickInfo.style.opacity = '0';
               clickInfo.style.pointerEvents = 'none';

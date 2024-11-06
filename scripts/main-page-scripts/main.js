@@ -2,12 +2,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const animatedText = document.getElementById("animatedText");
     const text = animatedText.textContent.trim();
 
-    // Очистим элемент и обернем каждую букву в <span>
+
     animatedText.innerHTML = text.split("").map((char, index) => {
         return `<span style="animation-delay: ${index * 0.1}s">${char === " " ? "&nbsp;" : char}</span>`;
     }).join("");
 
-    // Функция для запуска анимации
+
     const startWaveAnimation = () => {
         const letters = animatedText.querySelectorAll("span");
         letters.forEach((letter, index) => {
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
 
-    // Запускаем анимацию сразу и каждые 10 секунд
+
     startWaveAnimation();
     setInterval(startWaveAnimation, 10000);
 });

@@ -1,5 +1,5 @@
 
-/* Основные стили */
+
 
 body {
   font-family: "Roboto", sans-serif;
@@ -7,7 +7,7 @@ body {
   padding: 0;
 }
 
-/* Стили для логотипа */
+
 .logo {
   margin-top: 3px;
 }
@@ -28,7 +28,7 @@ header .container-fluid {
   font-size: 18px;
 }
 
-/* Стили для навигационных ссылок */
+
 .nav-links a {
   color: #2E2F42;
   font-size: 16px;
@@ -45,7 +45,7 @@ header .container-fluid {
   margin-top: 5px;
 }
 
-/* Стили для кнопок */
+/* buttons */
 .btn-outline-primary {
   background-color: #f3f3fe;
   color: #4D5AE5;
@@ -71,7 +71,7 @@ header .container-fluid {
   border-color: #4a1dbf;
 }
 
-/* Стили для карточек */
+/* cards */
 .custom-card {
   border: 1px solid #e0e0e0;
   border-radius: 8px;
@@ -115,7 +115,7 @@ header .container-fluid {
   margin-top: 90px !important;
 }
 
-/* Стили для оверлея */
+/* overlay */
 .overlay {
   position: fixed;
   top: 0;
@@ -127,19 +127,19 @@ header .container-fluid {
   z-index: 1000;
 }
 
-/* Стили для активной карточки */
+/* active card */
 .custom-card.active {
   position: fixed;
   z-index: 1001;
   transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease;
-  max-height: 80vh; /* Максимальная высота 80% от высоты окна */
-  max-width: 90vw;  /* Максимальная ширина 90% от ширины окна */
+  max-height: 80vh;
+  max-width: 90vw;
   width: auto;
   height: auto;
   transform-origin: center center;
 }
 
-/* Анимация для выбора карточки */
+/* animation card */
 @keyframes rotateEnlarge {
   0% {
     transform: translate(0, 0) rotateY(0deg) scale(1);
@@ -149,7 +149,7 @@ header .container-fluid {
   }
 }
 
-/* Анимация для снятия выбора карточки */
+/* animation deselect card */
 @keyframes rotateShrink {
   0% {
     transform: translate(0, 0) rotateY(360deg) scale(1.1);
@@ -159,41 +159,41 @@ header .container-fluid {
   }
 }
 
-/* Запуск анимации при выборе */
+
 .custom-card.animate-select {
   animation: rotateEnlarge 0.5s forwards;
 }
 
-/* Запуск анимации при снятии выбора */
+
 .custom-card.animate-deselect {
   animation: rotateShrink 0.5s forwards;
 }
 
-/* Стили для описания внутри карточки */
+
 .card-description {
   opacity: 0;
 
   transition: opacity 0.5s ease;
   margin-top: 15px;
   font-size: 16px;
-  color: #fff; /* Белый цвет текста */
-  background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный темный фон */
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 10px;
   border-radius: 8px;
 }
 
-/* При активации класса 'visible' описание плавно появляется */
+/* appearence with 'vivible' */
 .card-description.visible {
   opacity: 1;
   display: block;
 }
 
-/* При активации карточки описание отображается */
+/* after selecting card description appears */
 .custom-card.active .card-description {
   display: block;
 }
 
-/* Стили для футера */
+/* footer */
 .footer {
   background-color: #2E2F42;
   color: #ffffff;
@@ -213,7 +213,7 @@ header .container-fluid {
   margin: 0;
 }
 
-/* Стили для мобильного меню */
+/* mobile menu */
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -283,7 +283,7 @@ header .container-fluid {
   margin-bottom: 20px;
 }
 
-/* Стиль для кнопки закрытия меню */
+/* close button mobile menu */
 .button-3 {
   appearance: none;
   background-color: #b83149;
@@ -419,7 +419,7 @@ body.dark-mode .btn-outline-primary:hover {
 .custom-card {
   border: 1px solid #e0e0e0;
   border-radius: 8px;
-  overflow: hidden; /* Ограничивает содержимое внутри границ карточки */
+  overflow: hidden;
   transition: transform 0.5s ease;
 }
 
@@ -429,6 +429,6 @@ body.dark-mode .btn-outline-primary:hover {
 
 .card-inner {
   transition: transform 0.3s ease;
-  transform-origin: center center; /* Масштабирование из центра */
+  transform-origin: center center;
 }
 

@@ -1,4 +1,4 @@
-// Ползунок для изменения размера текста
+
 const textSizeSlider = document.getElementById('textSizeSlider');
 textSizeSlider.addEventListener('input', () => {
   const scale = textSizeSlider.value;
